@@ -1,5 +1,5 @@
 body {
-  background: #002b36;
+  background: #532746;
   padding: 20px 50px;
   margin: 0px;
 }
@@ -65,11 +65,11 @@ textarea {
 #box1 {
   padding: 5px;
   text-align: center;
-  background: #00222b;
+  background: #1a002b;
 }
 
 #box2 {
-  background: #08323c;
+  background: #33083c;
   font-size: 0px;
   padding: 0px 5px;
 }
@@ -117,7 +117,7 @@ textarea {
 
 #box3,
 #messages li {
-  background: #173e48;
+  background: #481740;
   font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -200,11 +200,11 @@ textarea {
 }
 
 #messages li {
-  background: rgba(23, 62, 72, 0.8);
+  background: rgba(54, 23, 72, 0.8);
   margin: 0 auto;
   list-style: none;
 }
 
 #messages li.error {
-  background: rgba(102, 8, 0, 0.8);
+  background: rgba(102, 0, 88, 0.8);
 }
