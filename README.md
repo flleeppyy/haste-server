@@ -36,6 +36,8 @@ STDOUT.  Check the README there for more details and usages.
 
 ## Settings
 
+Rename `example_config.js` to `config.js` and edit it to your liking.
+
 * `host` - the host the server runs on (default localhost)
 * `port` - the port the server runs on (default 7777)
 * `keyLength` - the length of the keys to user (default 10)
