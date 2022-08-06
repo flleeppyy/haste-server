@@ -1,0 +1,6 @@
+{
+  "ext": "js,css,html",
+  "verbose": true,
+  "exec": "node --inspect server.js",
+  "ignore": "**/*.min.js"
+}
