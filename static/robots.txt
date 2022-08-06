@@ -1,4 +1,5 @@
 User-agent: Twitterbot
+Allow: /
 Disallow:
 
 User-agent: *
