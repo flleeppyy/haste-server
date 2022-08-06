@@ -15,7 +15,7 @@ specifiers:
   redis: 0.8.1
   redis-url: 0.1.0
   st: ^2.0.0
-  uglify-js: 3.1.6
+  uglify-js: 3.16.3
   winston: ^2.0.0
 
 dependencies:
@@ -29,7 +29,7 @@ dependencies:
   redis: 0.8.1
   redis-url: 0.1.0
   st: 2.0.0
-  uglify-js: 3.1.6
+  uglify-js: 3.16.3
   winston: 2.4.6
 
 devDependencies:
@@ -319,10 +319,6 @@ packages:
   /colors/1.0.3:
     resolution: {integrity: sha512-pFGrxThWcWQ2MsAz6RtgeWe4NK2kUE1WfsrvvlctdII745EW9I0yflqhe7++M5LEc7bV2c/9/5zc8sFcpL0Drw==}
     engines: {node: '>=0.1.90'}
-    dev: false
-
-  /commander/2.11.0:
-    resolution: {integrity: sha512-b0553uYA5YAEGgyYIGYROzKQ7X5RAqedkfjiZxwi0kL1g3bOaBNNZfYkzt/CL0umgD5wc9Jec2FbB98CjkMRvQ==}
     dev: false
 
   /concat-map/0.0.1:
@@ -1402,11 +1398,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /source-map/0.6.1:
-    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   /sparse-bitfield/3.0.3:
     resolution: {integrity: sha512-kvzhi7vqKTfkh0PZU+2D2PIllw2ymqJKujUcyPMd9Y75Nv4nPbGJZXNhxsgdQab2BmlDct1YnfQCguEvHr7VsQ==}
     dependencies:
@@ -1549,13 +1540,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /uglify-js/3.1.6:
-    resolution: {integrity: sha512-/rseyxEKEVMBo8279lqpoJgD6C/i/CIi+9TJDvWmb+Xo6mqMKwjA8Io3IMHlcXQzj99feR6zrN8m3wqqvm/nYA==}
+  /uglify-js/3.16.3:
+    resolution: {integrity: sha512-uVbFqx9vvLhQg0iBaau9Z75AxWJ8tqM9AV890dIZCLApF4rTcyHwmAvLeEdYRs+BzYWu8Iw81F79ah0EfTXbaw==}
     engines: {node: '>=0.8.0'}
     hasBin: true
-    dependencies:
-      commander: 2.11.0
-      source-map: 0.6.1
     dev: false
 
   /undefsafe/2.0.5:
