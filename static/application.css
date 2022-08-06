@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background: #441d4f;
   padding: 20px 50px;
@@ -20,6 +24,8 @@ textarea {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
 
 /* the line numbers */
 
