@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /
 Allow: /favicon.ico
 Allow: /logo.png
-Allow: /
+Allow: /$
 Crawl-delay: 10
