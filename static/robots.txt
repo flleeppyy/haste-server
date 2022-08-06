@@ -1,5 +1,4 @@
 User-agent: Twitterbot
-Allow: /
 Disallow:
 
 User-agent: *
@@ -7,4 +6,3 @@ Allow: /favicon.ico
 Allow: /logo.png
 Allow: /$
 Disallow: /
-Crawl-delay: 10
