@@ -7,3 +7,4 @@ data
 docker-compose.override.yml
 config.js
 **/*.min.js
+!static/highlight.min.js
