@@ -1,8 +1,7 @@
-User-agent: Twitterbot
-Disallow:
-
-User-agent: *
-Allow: /favicon.ico
-Allow: /logo.png
-Allow: /$
-Disallow: /
+user-agent: *
+disallow: *
+allow: /favicon.ico
+allow: /logo
+allow: /$
+allow: /*.png
+allow: /*.ico
