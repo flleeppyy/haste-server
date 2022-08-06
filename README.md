@@ -1,9 +1,9 @@
-# Haste
+# Haste (Chen Edition)
 
 Haste is an open-source pastebin software written in node.js, which is easily
 installable in any network.  It can be backed by either redis or filesystem,
 and has a very easy adapter interface for other stores.  A publicly available
-version can be found at [hastebin.com](http://hastebin.com)
+version can be found at [haste.fleepy.tv](http://haste.fleepy.tv)
 
 Major design objectives:
 
@@ -25,6 +25,7 @@ STDOUT.  Check the README there for more details and usages.
 * Firefox 8
 * Chrome 17
 * Safari 5.3
+* Ran Explorer 10
 
 ## Installation
 
@@ -41,7 +42,7 @@ STDOUT.  Check the README there for more details and usages.
 * `maxLength` - maximum length of a paste (default 400000)
 * `staticMaxAge` - max age for static assets (86400)
 * `recompressStaticAssets` - whether or not to compile static js assets (true)
-* `documents` - static documents to serve (ex: http://hastebin.com/about.com)
+* `documents` - static documents to serve (ex: http://haste.fleepy.tv/about.com)
   in addition to static assets.  These will never expire.
 * `storage` - storage options (see below)
 * `logging` - logging preferences
@@ -354,15 +355,19 @@ Here is a list of all the environment variables
 |  RATELIMITS_BLACKLIST_EVERY_SECONDS  |                                       |     By default client names in the blacklist will be subject to 0 requests per hours     |
 |         RATELIMITS_BLACKLIST         | example1.blacklist,example2.blacklist |           Comma separated list of the clients which are in the blacklistpool.            |
 
-## Author
+## Authors
 
-John Crepezzi <john.crepezzi@gmail.com>
+Chen Jinkerson <flleeppyybusiness@gmail.com>
+
+Original Author: John Crepezzi <john.crepezzi@gmail.com>
 
 ## License
 
 (The MIT License)
 
 Copyright © 2011-2012 John Crepezzi
+
+Copyright © 2022 Chen Jinkerson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the ‘Software’), to deal in
