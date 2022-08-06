@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "start": "node server.js",
-    "dev": "cross-env NODE_ENV=development  nodemon --ext js --exec 'node --inspect' server.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
     "lint": "prettier --write **/**/*.{js,css,html}",
     "test": "mocha --recursive"
   },
