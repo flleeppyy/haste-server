@@ -2,15 +2,31 @@
   "name": "haste",
   "version": "0.1.0",
   "private": true,
-  "description": "Private Pastebin Server",
+  "description": "Private Pastebin Server, chen edition!",
   "keywords": [
     "paste",
-    "pastebin"
+    "pastebin",
+    "touhou",
+    "chen"
   ],
   "author": {
-    "name": "John Crepezzi",
-    "email": "john.crepezzi@gmail.com",
-    "url": "http://seejohncode.com/"
+    "name": "Chen Jinkerson",
+    "email": "flleeppyybusiness@gmail.com",
+    "url": "https://fleepy.tv"
+  },
+  "contributors": [
+    {
+      "name": "John Crepezzi",
+      "email": "john.crepezzi@gmail.com",
+      "url": "http://seejohncode.com/"
+    }
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "cross-env NODE_ENV=development  nodemon --ext js --exec 'node --inspect' server.js",
+    "minifystatic": "uglifyjs static/application.js -o static/application.min.js",
+    "lint": "prettier --write **/**/*.{js,css,html}",
+    "test": "mocha --recursive"
   },
   "main": "haste",
   "dependencies": {
@@ -18,6 +34,7 @@
     "connect": "^3.7.0",
     "connect-ratelimit": "0.0.7",
     "connect-route": "0.1.5",
+    "cross-env": "^7.0.3",
     "mongodb": "3.6.0",
     "pg": "^8.0.0",
     "redis": "0.8.1",
@@ -27,7 +44,10 @@
     "winston": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "^8.1.3"
+    "eslint": "^8.21.0",
+    "mocha": "^8.1.3",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
   },
   "bundledDependencies": [],
   "bin": {
@@ -40,9 +60,5 @@
   ],
   "directories": {
     "lib": "./lib"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "test": "mocha --recursive"
   }
 }
