@@ -3,7 +3,7 @@
   "endOfLine": "lf",
   "proseWrap": "always",
   "quoteProps": "consistent",
-  "trailingComma": "all",
+  "trailingComma": "none",
   "printWidth": 120,
   "tabWidth": 2,
   "semi": true,

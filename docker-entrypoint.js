@@ -28,7 +28,7 @@ const {
   RATE_LIMITS_BLACKLIST_TOTAL_REQUESTS,
   RATE_LIMITS_BLACKLIST_EVERY_MILLISECONDS,
   RATE_LIMITS_BLACKLIST,
-  DOCUMENTS,
+  DOCUMENTS
 } = process.env;
 
 const config = {
@@ -47,13 +47,13 @@ const config = {
     {
       level: LOGGING_LEVEL,
       type: LOGGING_TYPE,
-      colorize: LOGGING_COLORIZE,
-    },
+      colorize: LOGGING_COLORIZE
+    }
   ],
 
   keyGenerator: {
     type: KEYGENERATOR_TYPE,
-    keyspace: KEY_GENERATOR_KEYSPACE,
+    keyspace: KEY_GENERATOR_KEYSPACE
   },
 
   rateLimits: {
@@ -62,23 +62,23 @@ const config = {
     categories: {
       normal: {
         totalRequests: RATE_LIMITS_NORMAL_TOTAL_REQUESTS,
-        every: RATE_LIMITS_NORMAL_EVERY_MILLISECONDS,
+        every: RATE_LIMITS_NORMAL_EVERY_MILLISECONDS
       },
       whitelist:
         RATE_LIMITS_WHITELIST_EVERY_MILLISECONDS || RATE_LIMITS_WHITELIST_TOTAL_REQUESTS
           ? {
               totalRequests: RATE_LIMITS_WHITELIST_TOTAL_REQUESTS,
-              every: RATE_LIMITS_WHITELIST_EVERY_MILLISECONDS,
+              every: RATE_LIMITS_WHITELIST_EVERY_MILLISECONDS
             }
           : null,
       blacklist:
         RATE_LIMITS_BLACKLIST_EVERY_MILLISECONDS || RATE_LIMITS_BLACKLIST_TOTAL_REQUESTS
           ? {
               totalRequests: RATE_LIMITS_WHITELIST_TOTAL_REQUESTS,
-              every: RATE_LIMITS_BLACKLIST_EVERY_MILLISECONDS,
+              every: RATE_LIMITS_BLACKLIST_EVERY_MILLISECONDS
             }
-          : null,
-    },
+          : null
+    }
   },
 
   storage: {
@@ -92,7 +92,7 @@ const config = {
     db: STORAGE_DB,
     user: STORAGE_USERNAME,
     password: STORAGE_PASSWORD,
-    path: STORAGE_FILEPATH,
+    path: STORAGE_FILEPATH
   },
 
   documents: DOCUMENTS
@@ -100,7 +100,7 @@ const config = {
         const keyAndValueArray = item.replace(/\s/g, "").split("=");
         return { ...acc, [keyAndValueArray[0]]: keyAndValueArray[1] };
       }, {})
-    : null,
+    : null
 };
 
 console.log(JSON.stringify(config));
