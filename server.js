@@ -77,7 +77,6 @@ if (config.recompressStaticAssets) {
         throw uglifyResult.error;
       }
 
-      console.log(uglifyResult.code);
       fs.writeFileSync("./static/" + dest, uglifyResult.code, "utf8");
       winston.info("compressed " + item + " into " + dest);
     }
