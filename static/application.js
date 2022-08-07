@@ -328,7 +328,9 @@ haste.prototype.configureButtons = function () {
       },
       shortcutDescription: "control + shift + r",
       action: function () {
-        window.location.href = "/raw/" + _this.doc.key;
+        if (window.location.pathname !== "/") {
+          window.location.href = "/raw/" + _this.doc.key;
+        }
       }
     },
     {
@@ -345,7 +347,7 @@ haste.prototype.configureButtons = function () {
     {
       $where: $("#box2 .sharex"),
       label: "ShareX",
-      shortcutDescription: "Get the ShareX uploader File",
+      shortcutDescription: "Get the ShareX Uploader file",
       // no shortcut
       action: function () {
         // /haste.fleepy.tv.sxcu
