@@ -116,12 +116,12 @@ haste.prototype.showMessage = function (msg, cls) {
 
 // Show the light key
 haste.prototype.lightKey = function () {
-  this.configureKey(["new", "save"]);
+  this.configureKey(["new", "save", "sharex"]);
 };
 
 // Show the full key
 haste.prototype.fullKey = function () {
-  this.configureKey(["new", "duplicate", "twitter", "raw"]);
+  this.configureKey(["new", "duplicate", "twitter", "raw", "sharex"]);
 };
 
 // Set the key up for certain things to be enabled
@@ -340,6 +340,24 @@ haste.prototype.configureButtons = function () {
       shortcutDescription: "control + shift + t",
       action: function () {
         window.open("https://twitter.com/share?url=" + encodeURI(window.location.href));
+      }
+    },
+    {
+      $where: $("#box2 .sharex"),
+      label: "ShareX",
+      shortcutDescription: "Get the ShareX uploader File",
+      // no shortcut
+      action: function () {
+        // /haste.fleepy.tv.sxcu
+        fetch("/haste.fleepy.tv.sxcu")
+          .then(res => res.blob())
+          .then(blob => {
+            let objectURL = URL.createObjectURL(blob);
+            let a = document.createElement("a");
+            a.href = objectURL;
+            a.download = "haste.fleepy.tv.sxcu";
+            a.click();
+          });
       }
     }
   ];

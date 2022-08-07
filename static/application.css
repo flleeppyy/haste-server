@@ -191,6 +191,17 @@ textarea {
 #box2 .function.enabled.twitter:hover {
   background-position: -153px bottom;
 }
+
+#box2 .function.sharex {
+  background-position: -190px top;
+}
+#box2 .function.enabled.sharex {
+  background-position: -190px center;
+}
+#box2 .function.enabled.sharex:hover {
+  background-position: -190px bottom;
+}
+
 #box2 .button-picture {
   border-width: 0;
   font-size: inherit;

@@ -1,0 +1,8 @@
+﻿{
+  "Version": "14.1.0",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://haste.fleepy.tv/documents",
+  "Body": "Binary",
+  "URL": "https://haste.fleepy.tv/{json:key}"
+}
