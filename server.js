@@ -152,6 +152,13 @@ app.use(
     router.head("/documents/:id", function (request, response) {
       return documentHandler.handleGet(request, response, config);
     });
+
+    //ping
+    router.head("/ping", function (request, response) {
+      response.writeHead(200);
+      response.end();
+      return;
+    });
   })
 );
 
